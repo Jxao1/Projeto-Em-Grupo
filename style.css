@@ -1,0 +1,573 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: white;
+}
+header{
+    background: #373737;
+}
+main{
+    background: #494949;
+}
+.trilho{
+    width: 50px;
+    height: 30px;
+    background-color: #868585;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+}
+.trilho .indicador{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    transform: scale(.9);
+    position: absolute;
+    left: 0;
+    transition: 0.7s;
+}
+.trilho.dark .indicador{
+    left: 20px;
+    background-color: #242424; 
+}
+body.dark{
+    background-color: #242424;
+}
+body.dark .perfil-meu{
+    color: white;
+}
+body.dark .perfil-j{
+    color: white;
+}
+body.dark .perfil-t{
+    color: white;
+}
+body.dark .perfil-m{
+    color: white;
+}
+body.dark .perfil-c{
+    color: white;
+}
+body.dark .perfil-jon{
+    color: white;
+}
+.container{
+    max-width: 1440px;
+    padding: 0 4%;
+    margin: 0 auto;
+}
+section{
+    padding: 1.8rem 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.logo a{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav ul a{
+    margin: 0 25px;
+    font-size: 12px;
+    display: block;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+nav ul a::after{
+    content:"";
+    height: 3px;
+    width: 0%;
+    background-color: white;
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+nav ul a:hover::after{
+    width: 100%;
+}
+/* main */
+main .container{
+    align-items: center;
+    margin-top: 0;
+    padding-left: 35%;
+}
+.main-text{
+    width: 50%;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+
+}
+.main-text h1{
+    font-size: 3.0rem;
+}
+/* end main*/
+.conheça{
+    background-color: #5b5b5b;
+}
+.conheça .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.conheça .conheça-text{
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 50%;
+    cursor: pointer;
+}
+.conheça .conheça-numero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+}
+.conheça .conheça-numero p{
+    text-align: center;
+    margin: 0 30px;
+    font-size: 16px;
+}
+.conheça .conheça-numero p span{
+    font-size: 30px;
+    font-weight: 600;
+}
+/* end conheça */ 
+.sobre .container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.sobre .perfil-meu{
+    width: 26%;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+.sobre .perfil-meu:hover{
+    box-shadow: 0px 10px 67px 8px #e6e6fa85,
+}
+.sobre .imgv img{
+    border-radius: 50%;
+    margin: 15px 0;
+}
+.sobre .perfil-meu .titulo{
+    margin: 13px 0;
+    font-weight: 550;
+}
+/* end meu */
+.sobrej .container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.sobrej .perfil-j{
+    width: 26%;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+.sobrej .perfil-j:hover{
+    box-shadow: 0px 10px 67px 8px #e6e6fa85;
+}
+.sobrej .imgj img{
+    border-radius: 50%;
+    margin: 15px 0;
+}
+.sobrej .perfil-j .tituIo{
+    margin: 13px 0;
+    font-weight: 500;
+}
+/* end julio */
+.sobret .container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.sobret .perfil-t{
+    width: 26%;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+.sobret .perfil-t:hover{
+    box-shadow: 0px 10px 67px 8px #e6e6fa85;
+}
+.sobret .imgt img{
+    border-radius: 47%;
+    margin: 15px 0;
+}
+.sobret .perfil-t .tItulo{
+    margin: 13px 0;
+    font-weight: 500;
+}
+/* end Thiago */
+.sobrem .container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.sobrem .perfil-m{
+    width: 26%;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+.sobrem .perfil-m:hover{
+    box-shadow: 0px 10px 67px 8px #e6e6fa85;
+}
+.sobrem .imgm img{
+    border-radius: 47%;
+    margin: 15px 0;
+}
+.sobrem .perfil-m .titulO{
+    margin: 13px 0;
+    font-weight: 500;
+}
+/* end Marilía */
+.sobrec .container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.sobrec .perfil-c{
+    width: 26%;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+.sobrec .perfil-c:hover{
+    box-shadow: 0px 10px 67px 8px #e6e6fa85;
+}
+.sobrec .imgc img{
+    border-radius: 47%;
+    margin: 15px 0;
+}
+.sobrec .perfil-c .titlo{
+    margin: 13px 0;
+    font-weight: 500;
+}
+/* end Jose */
+.sobrejon .container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.sobrejon .perfil-jon{
+    width: 26%;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+.sobrejon .perfil-jon:hover{
+    box-shadow: 0px 10px 67px 8px #e6e6fa85;
+}
+.sobrejon .imgjon img{
+    border-radius: 47%;
+    margin: 15px 0;
+}
+.sobrejon .perfil-jon .itulo{
+    margin: 13px 0;
+    font-weight: 500;
+}
+/* página 2 */
+.interesses .container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 55px;
+    cursor: pointer;
+}
+.interesses .imgv img{
+    border-radius: 50%;
+    padding-top: 30px;
+}
+.interesses .imgv .jv{
+    margin: 13px 7px;
+    font-weight: 500;
+}
+.interesses .card img{
+    width: 140px;
+    border-radius: 10px;
+}
+.interesses .card{
+    width: 20%;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 16px;
+    transition: 0.3s;
+}
+.interesses .card:hover{
+    box-shadow: 0px 10px 68px;
+}
+.interesses .card .tutulo{
+    margin: 13px 0;
+    font-weight: 550
+}
+/* inter João*/
+.interesses .imgjc img{
+    border-radius: 50%;
+    padding-top: 25px;
+}
+.interesses .imgjc .jc{
+    margin: 13px 7px;
+    font-weight: 500;
+    border-radius: 50%;
+}
+.interesses .cardjc img{
+    width: 140px;
+    border-radius: 10px;
+}
+.interesses .cardjc{
+    width: 20%;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 16px;
+    transition: 0.3s;
+}
+.interesses .cardjc:hover{
+    box-shadow: 0px 10px 68px;
+}
+.interesses .cardjc .tutilo{
+    margin: 13px 0;
+    font-weight: 550
+}
+/* inter Júlio*/
+.interesses .imgt img{
+    border-radius: 47%;
+    padding-top: 30px;
+}
+.interesses .imgt .th{
+    margin: 13px 7px;
+    font-weight: 500;
+    border-radius: 50%;
+}
+.interesses .cardt img{
+    width: 140px;
+    border-radius: 10px;
+}
+.interesses .cardt{
+    width: 20%;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 16px;
+    transition: 0.3s;
+}
+.interesses .cardt:hover{
+    box-shadow: 0px 10px 68px;
+}
+.interesses .cardt .tutilu{
+    margin: 13px 0;
+    font-weight: 550
+}
+/* inter Thiago */
+.interesses .imgm img{
+    border-radius: 47%;
+    padding-top: 30px;
+}
+.interesses .imgm .mar{
+    margin: 13px 7px;
+    font-weight: 500;
+    border-radius: 50%;
+}
+.interesses .cardm img{
+    width: 140px;
+    border-radius: 10px;
+}
+.interesses .cardm{
+    width: 20%;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 16px;
+    transition: 0.3s;
+}
+.interesses .cardm:hover{
+    box-shadow: 0px 10px 68px;
+}
+.interesses .cardm .titulu{
+    margin: 13px 0;
+    font-weight: 550
+}
+/* inter Marília */
+.interesses .imgc img{
+    border-radius: 50%;
+    padding-top: 25px;
+}
+.interesses .imgc .joc{
+    margin: 13px 7px;
+    font-weight: 500;
+    border-radius: 50%;
+}
+.interesses .cardc img{
+    width: 140px;
+    border-radius: 10px;
+}
+.interesses .cardc{
+    width: 20%;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 16px;
+    transition: 0.3s;
+}
+.interesses .cardc:hover{
+    box-shadow: 0px 10px 68px;
+}
+.interesses .cardc .iutlu{
+    margin: 13px 0;
+    font-weight: 550
+}
+/* inter Jose */
+.interesses .imgjon img{
+    border-radius: 50%;
+    padding-top: 25px;
+}
+.interesses .imgjon .jon{
+    margin: 13px 7px;
+    font-weight: 500;
+    border-radius: 50%;
+}
+.interesses .cardjon img{
+    width: 140px;
+    border-radius: 10px;
+}
+.interesses .cardjon{
+    width: 20%;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 16px;
+    transition: 0.3s;
+}
+.interesses .cardjon:hover{
+    box-shadow: 0px 10px 68px;
+}
+.interesses .cardc .itulu{
+    margin: 13px 0;
+    font-weight: 550
+}
+/* inter Jonatas */
+.entrecontato{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    background-color: #5b5b5b;
+    flex-direction: column;
+    padding: 10px 45px;
+}
+.entrecontato h2{
+    color: white;
+    font-size: 2.5rem;
+    margin: 2rem;
+}
+.entrecontato form{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+form label{
+    color: white;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+form input{
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: a11 0.5s;
+}
+form input:focus{
+    border-radius: 16px;
+}
+form textarea{
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: a11 0.5s;
+}
+form textarea:focus{
+    border-radius: 16px;
+}
+form button{
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid #f5f5f5;
+    transition: a11 1s;
+    margin-bottom: 20px;
+}
+form button:hover{
+    background: #f5f5f5;
+    color: #373737;
+    border-radius: 16px;
+}
+/* footer */
+footer{
+    background-color: #373737;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding: 40px 100px 50px;
+    border-top-left-radius: 180px;
+}
+.Links{
+    display: flex;
+    flex-wrap: wrap;
+}
+.Links a{
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 17px;
+}
+.copyright{
+    font-size: 13px;
+    margin-top: 25px;
+}
+.line{
+    background-color: white;
+    width: 20px;
+    height: 6px;
+    margin-top: 2px;
+    border-radius: 40px;
+    position: relative;
+    animation: underline-animation 3s infinite;
+}
+@keyframes underline-animation{
+    0%{
+        left: -150px;
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        left: 149px;
+        opacity: 0;
+    }
+}
+
+
